@@ -1,14 +1,13 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
-}
+// next.config.js
+const repo = "ursal";
 
-export default nextConfig
+const nextConfig = {
+  output: "export",
+  distDir: "docs",
+  basePath: `/${repo}`,
+  assetPrefix: `/${repo}`,
+  images: { unoptimized: true },
+  trailingSlash: true,
+};
+export default nextConfig;
