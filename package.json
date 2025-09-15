@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build && touch docs/.nojekyll",
+    "build:production": "NEXT_PUBLIC_PRODUCTION=true next build && touch docs/.nojekyll",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"

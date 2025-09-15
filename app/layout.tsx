@@ -4,9 +4,11 @@ import { GeistMono } from "geist/font/mono";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
+const basePath = process.env.NODE_ENV === 'production' ? '/ursal' : '';
+
 export const metadata: Metadata = {
-  title: "Ursal",
-  description: "Created with v0",
+  title: "URSAL - Token de Unificação da América Latina",
+  description: "Token virtual descentralizado que representa a integração e moeda fictícia da União das Repúblicas Socialistas da América Latina - URSAL. Disponível na rede Polygon.",
   generator: "v0.app",
 };
 
@@ -17,7 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <link rel="icon" href="/logo.svg" sizes="any" />
+      <head>
+        <link rel="icon" href="/logo.svg" sizes="any" />
+      </head>
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         {children}
         <Analytics />

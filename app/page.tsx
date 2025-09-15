@@ -24,15 +24,22 @@ export default function URSALHomePage() {
         <div className="container mx-auto px-4 py-24">
           <div className="text-center max-w-4xl mx-auto">
             <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 text-sm font-medium py-1.5 px-4" variant="outline">
-              Token $URSAL na Polygon Network
+              Token de Unificação
             </Badge>
-            <h1 className="text-5xl md:text-7xl font-bold mb-8 text-balance bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
-              <span>URSAL</span> <span>Crypto</span>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+              URSAL – União das Repúblicas Socialistas da América Latina
             </h1>
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 text-pretty max-w-3xl mx-auto leading-relaxed">
-              A criptomoeda que representa a união e o futuro da América do Sul. Invista no token que conecta
-              comunidades e constrói pontes para um amanhã próspero.
+            <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-4xl mx-auto leading-relaxed">
+              Todo grande projeto democrático começa pela unificação e distribuição.
             </p>
+            <p className="text-lg md:text-xl text-muted-foreground mb-10 text-pretty max-w-4xl mx-auto leading-relaxed">
+              O URSAL é um token virtual, descentralizado e independente, que representa o início da integração e moeda fictícia da União das Repúblicas Socialistas da América Latina – URSAL.
+            </p>
+            <div className="mb-8 p-6 bg-gradient-to-r from-red-500/10 to-red-600/10 border border-red-500/20 rounded-xl max-w-2xl mx-auto">
+              <p className="text-lg font-semibold text-red-600 dark:text-red-400 flex items-center justify-center">
+                🚩 Mostre seu apoio, garanta já o seu token e faça parte da fase inicial do projeto enquanto há disponibilidade.
+              </p>
+            </div>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-14">
               <Button 
                 size="lg" 
@@ -45,7 +52,7 @@ export default function URSALHomePage() {
                   rel="noopener noreferrer"
                   className="text-lg font-medium flex items-center"
                 >
-                  Começar a Investir
+                  👉 Acesse o Pool
                   <ArrowRight className="ml-2 h-5 w-5 animate-pulse" />
                 </a>
               </Button>
@@ -99,107 +106,142 @@ export default function URSALHomePage() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Como garantir o token */}
       <section className="py-24 bg-gradient-to-b from-muted/10 to-muted/40">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <Badge className="mb-4 bg-secondary/10 text-secondary border-secondary/20 text-sm font-medium py-1.5 px-4" variant="outline">
-              Oportunidade de Investimento
-            </Badge>
+          <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
-              Por que Investir em <span className="font-extrabold">$URSAL</span>?
+              🔹 1. Como garantir o meu token?
             </h2>
-            <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto text-pretty leading-relaxed">
-              Descubra os incentivos únicos que fazem do URSAL uma oportunidade de investimento promissora para o futuro da América do Sul
-            </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="border-2 border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 lg:col-span-3 rounded-2xl overflow-hidden bg-gradient-to-br from-card to-card/80">
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-2 border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 rounded-2xl overflow-hidden bg-gradient-to-br from-card to-card/80">
               <CardHeader className="pb-8">
-                <div className="w-20 h-20 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl flex items-center justify-center mb-6 mx-auto transform hover:rotate-6 transition-transform duration-300 shadow-lg">
-                  <Globe className="h-10 w-10 text-primary" />
-                </div>
-                <CardTitle className="text-2xl md:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary mb-4">
-                  Moeda Unificada: O Futuro da Integração
-                </CardTitle>
-                <CardDescription className="text-center max-w-4xl mx-auto text-lg leading-relaxed">
-                  Uma moeda unificada oferece estabilidade econômica, reduz custos de transação entre países, elimina
-                  volatilidade cambial e fortalece o poder de negociação regional. Diferente dos sistemas monetários
-                  tradicionais fragmentados, o <span className="font-medium text-primary">URSAL</span> representa uma visão integrada que beneficia toda a comunidade
-                  sul-americana através da cooperação financeira e desenvolvimento conjunto.
+                <CardDescription className="text-lg leading-relaxed space-y-4">
+                  <p>Estamos em fase inicial de implementação.</p>
+                  <p>O token URSAL está disponível na rede Polygon para compra em edição limitada na QuickSwap:</p>
+                  <div className="bg-muted/70 p-4 rounded-lg border border-border/30">
+                    <p className="font-semibold">👉 Acesse o Pool</p>
+                    <p>Clique na opção "Swap" e troque USDT (rede Polygon) por URSAL.</p>
+                  </div>
+                  <ul className="space-y-2 text-left">
+                    <li>• Atualmente, disponível apenas para troca com USDT.</li>
+                    <li>• O Pool garante o melhor preço automático no momento da operação.</li>
+                    <li>• A disponibilidade é limitada e segue a lógica de ordem de chegada.</li>
+                    <li>• Enquanto durarem os estoques.</li>
+                  </ul>
                 </CardDescription>
               </CardHeader>
             </Card>
+          </div>
+        </div>
+      </section>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Potencial de Crescimento</CardTitle>
-                <CardDescription>
-                  Token com fundamentos sólidos e visão de longo prazo para valorização sustentável
-                </CardDescription>
-              </CardHeader>
-            </Card>
+      {/* Como criar carteira e comprar */}
+      <section className="py-24">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
+              🔹 2. Como criar uma carteira, comprar USDT e trocar por URSAL?
+            </h2>
+          </div>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Shield className="h-6 w-6 text-secondary" />
-                </div>
-                <CardTitle className="text-xl">Segurança Blockchain</CardTitle>
-                <CardDescription>
-                  Construído na rede Polygon, oferecendo transações rápidas, seguras e com baixo custo
-                </CardDescription>
-              </CardHeader>
-            </Card>
+          <div className="max-w-5xl mx-auto">
+            <div className="grid md:grid-cols-1 gap-8">
+              {/* Passo 1 */}
+              <Card className="border-border hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Passo 1 – Criar sua carteira</CardTitle>
+                  <CardDescription className="text-lg">
+                    <ul className="space-y-2">
+                      <li>• Baixe e instale a MetaMask (navegador ou celular).</li>
+                      <li>• Configure a rede Polygon (Matic) dentro da MetaMask.</li>
+                    </ul>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Globe className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Visão Continental</CardTitle>
-                <CardDescription>
-                  Projeto focado na integração e desenvolvimento econômico da América do Sul
-                </CardDescription>
-              </CardHeader>
-            </Card>
+              {/* Passo 2 */}
+              <Card className="border-border hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl text-secondary">Passo 2 – Comprar USDT na rede Polygon</CardTitle>
+                  <CardDescription className="text-lg">
+                    <ul className="space-y-2">
+                      <li>• Crie uma conta em uma corretora confiável (ex.: Binance).</li>
+                      <li>• Compre USDT e faça a retirada diretamente na rede Polygon (MATIC) para sua MetaMask.</li>
+                    </ul>
+                    <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
+                      <p className="font-semibold text-yellow-600 dark:text-yellow-400">
+                        ⚠️ Atenção: certifique-se de selecionar rede Polygon (MATIC) na hora de sacar os USDT da Binance.
+                      </p>
+                    </div>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Users className="h-6 w-6 text-secondary" />
-                </div>
-                <CardTitle className="text-xl">Comunidade Ativa</CardTitle>
-                <CardDescription>
-                  Base sólida de apoiadores comprometidos com os valores e objetivos do projeto
-                </CardDescription>
-              </CardHeader>
-            </Card>
+              {/* Passo 3 */}
+              <Card className="border-border hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Passo 3 – Conectar à QuickSwap</CardTitle>
+                  <CardDescription className="text-lg">
+                    <ul className="space-y-2">
+                      <li>• Acesse o link do pool oficial.</li>
+                      <li>• Conecte sua MetaMask à plataforma.</li>
+                    </ul>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
-                  <Coins className="h-6 w-6 text-primary" />
-                </div>
-                <CardTitle className="text-xl">Tokenomics Transparente</CardTitle>
-                <CardDescription>
-                  Distribuição clara e justa, com foco na sustentabilidade e crescimento orgânico
-                </CardDescription>
-              </CardHeader>
-            </Card>
+              {/* Passo 4 */}
+              <Card className="border-border hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl text-secondary">Passo 4 – Realizar a troca</CardTitle>
+                  <CardDescription className="text-lg">
+                    <ul className="space-y-2">
+                      <li>• Selecione USDT → URSAL.</li>
+                      <li>• Confirme a transação na MetaMask.</li>
+                      <li>• Pronto! Agora você possui tokens URSAL na sua carteira.</li>
+                    </ul>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
 
-            <Card className="border-border hover:shadow-lg transition-shadow">
-              <CardHeader>
-                <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center mb-4">
-                  <ArrowRight className="h-6 w-6 text-secondary" />
-                </div>
-                <CardTitle className="text-xl">Entrada Antecipada</CardTitle>
-                <CardDescription>
-                  Oportunidade de participar desde o início de um projeto com potencial disruptivo
+              {/* Passo 5 */}
+              <Card className="border-border hover:shadow-lg transition-shadow">
+                <CardHeader>
+                  <CardTitle className="text-xl text-primary">Passo 5 – Visualizar seus tokens</CardTitle>
+                  <CardDescription className="text-lg">
+                    <ul className="space-y-2">
+                      <li>• Caso não apareça automaticamente, adicione manualmente o contrato do token URSAL à MetaMask.</li>
+                      <li>• O token URSAL estará visível no seu saldo.</li>
+                    </ul>
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* O que é o Token URSAL */}
+      <section className="py-24 bg-gradient-to-b from-muted/10 to-muted/40">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
+              🔹 3. O que é o Token URSAL?
+            </h2>
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <Card className="border-2 border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 rounded-2xl overflow-hidden bg-gradient-to-br from-card to-card/80">
+              <CardHeader className="pb-8">
+                <CardDescription className="text-lg leading-relaxed">
+                  <ul className="space-y-4 text-left">
+                    <li>• Um token independente e descentralizado.</li>
+                    <li>• Protegido da inflação por sua natureza digital.</li>
+                    <li>• Representa uma ideia de integração e apoio comunitário.</li>
+                  </ul>
                 </CardDescription>
               </CardHeader>
             </Card>
@@ -323,14 +365,40 @@ export default function URSALHomePage() {
         </div>
       </section>
 
+      {/* Disclaimer Section */}
+      <section className="py-20 bg-gradient-to-r from-yellow-500/5 via-orange-500/5 to-red-500/5">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance text-red-600 dark:text-red-400">
+                ⚠️ Disclaimer
+              </h2>
+            </div>
+            <Card className="border-2 border-red-500/20 bg-gradient-to-br from-red-500/5 to-orange-500/5 rounded-2xl">
+              <CardHeader className="pb-8">
+                <CardDescription className="text-lg leading-relaxed space-y-4">
+                  <p className="font-semibold text-red-600 dark:text-red-400">
+                    Este é um projeto de diversão, sem nenhuma promessa de adoção, retorno financeiro ou rentabilidade futura.
+                  </p>
+                  <p>Você está adquirindo um token e levando apenas o token.</p>
+                  <p className="font-semibold text-orange-600 dark:text-orange-400">
+                    Existe risco potencial de perda parcial ou integral do valor investido.
+                  </p>
+                </CardDescription>
+              </CardHeader>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Footer */}
       <footer className="bg-muted/50 py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-primary">URSAL</span> Crypto
+              <span className="text-primary">URSAL</span> – União das Repúblicas Socialistas da América Latina
             </h3>
-            <p className="text-muted-foreground mb-6">Unindo a América do Sul através da tecnologia blockchain</p>
+            <p className="text-muted-foreground mb-6">Token de unificação da América Latina</p>
             <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
               <span>Token: $URSAL</span>
               <span>•</span>
