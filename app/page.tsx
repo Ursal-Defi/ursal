@@ -1,21 +1,36 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { TrendingUp, Shield, Globe, Users, Coins, ArrowRight, Copy, ExternalLink } from "lucide-react"
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import {
+  TrendingUp,
+  Shield,
+  Globe,
+  Users,
+  Coins,
+  ArrowRight,
+  Copy,
+  ExternalLink,
+} from "lucide-react";
 
 export default function URSALHomePage() {
-  const contractAddress = "0x992561cd77c1b32d94826d833354FcC9C83810fb"
+  const contractAddress = "0x992561cd77c1b32d94826d833354FcC9C83810fb";
 
   const copyToClipboard = () => {
-    navigator.clipboard.writeText(contractAddress)
-  }
+    navigator.clipboard.writeText(contractAddress);
+  };
 
   return (
     <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-primary/20 via-background to-secondary/10">
+      <section className=" bg-gradient-to-br from-primary/20 via-background to-secondary/10">
         {/* Background decorative elements */}
         <div className="absolute inset-0 overflow-hidden opacity-10">
           <div className="absolute top-10 left-10 w-64 h-64 rounded-full bg-primary blur-3xl"></div>
@@ -23,46 +38,29 @@ export default function URSALHomePage() {
         </div>
         <div className="container mx-auto px-4 py-24">
           <div className="text-center max-w-4xl mx-auto">
-            <Badge className="mb-6 bg-primary/20 text-primary border-primary/30 text-sm font-medium py-1.5 px-4" variant="outline">
+            <Badge
+              className="mb-6 bg-primary/20 text-primary border-primary/30 text-sm font-medium py-1.5 px-4"
+              variant="outline"
+            >
               Token de Unificação
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-primary to-secondary">
               URSAL – União das Repúblicas Socialistas da América Latina
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-pretty max-w-4xl mx-auto leading-relaxed">
-              Todo grande projeto democrático começa pela unificação e distribuição.
+              Todo grande projeto democrático começa pela unificação e
+              distribuição.
             </p>
             <p className="text-lg md:text-xl text-muted-foreground mb-10 text-pretty max-w-4xl mx-auto leading-relaxed">
-              O URSAL é um token virtual, descentralizado e independente, que representa o início da integração e moeda fictícia da União das Repúblicas Socialistas da América Latina – URSAL.
+              O URSAL é um token virtual, descentralizado e independente, que
+              representa o início da integração e moeda fictícia da União das
+              Repúblicas Socialistas da América Latina – URSAL.
             </p>
             <div className="mb-8 p-6 bg-gradient-to-r from-red-500/10 to-red-600/10 border border-red-500/20 rounded-xl max-w-2xl mx-auto">
               <p className="text-lg font-semibold text-red-600 dark:text-red-400 flex items-center justify-center">
-                🚩 Mostre seu apoio, garanta já o seu token e faça parte da fase inicial do projeto enquanto há disponibilidade.
+                🚩 Mostre seu apoio, garanta já o seu token e faça parte da fase
+                inicial do projeto enquanto há disponibilidade.
               </p>
-            </div>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-14">
-              <Button 
-                size="lg" 
-                className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-10 py-6 rounded-xl shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105" 
-                asChild
-              >
-                <a
-                  href="https://info.quickswap.exchange/analytics/v3/pairs/0x75f6f0af00b548b0be0b35d5c11d3b1f9ace6bf4?chainId=137"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-lg font-medium flex items-center"
-                >
-                  👉 Acesse o Pool
-                  <ArrowRight className="ml-2 h-5 w-5 animate-pulse" />
-                </a>
-              </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-secondary text-secondary hover:bg-secondary/10 px-10 py-6 rounded-xl bg-transparent transition-all duration-300 hover:scale-105 text-lg font-medium"
-              >
-                Saiba Mais
-              </Button>
             </div>
 
             {/* Contract Address */}
@@ -72,20 +70,22 @@ export default function URSALHomePage() {
                 Endereço do Contrato (Polygon)
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-between bg-muted/70 backdrop-blur-sm rounded-xl p-4 border border-border/30">
-                <code className="text-sm font-mono text-foreground break-all">{contractAddress}</code>
+                <code className="text-sm font-mono text-foreground break-all">
+                  {contractAddress}
+                </code>
                 <div className="flex gap-3 mt-3 sm:mt-0 sm:ml-4">
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
+                  <Button
+                    size="sm"
+                    variant="outline"
                     onClick={copyToClipboard}
                     className="border-primary/30 hover:bg-primary/10 transition-all duration-300"
                   >
                     <Copy className="h-4 w-4 mr-2" />
                     Copiar
                   </Button>
-                  <Button 
-                    size="sm" 
-                    variant="outline" 
+                  <Button
+                    size="sm"
+                    variant="outline"
                     asChild
                     className="border-secondary/30 hover:bg-secondary/10 transition-all duration-300"
                   >
@@ -107,28 +107,73 @@ export default function URSALHomePage() {
       </section>
 
       {/* Como garantir o token */}
-      <section className="py-24 bg-gradient-to-b from-muted/10 to-muted/40">
+      <section
+        id="como-garantir"
+        className="py-24 bg-gradient-to-b from-muted/10 to-muted/40"
+      >
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold mb-6 text-balance bg-clip-text text-transparent bg-gradient-to-r from-secondary to-primary">
               🔹 1. Como garantir o meu token?
             </h2>
           </div>
-
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-14">
+            <Button
+              size="lg"
+              className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-10 py-6 rounded-xl shadow-lg shadow-primary/20 transition-all duration-300 hover:scale-105"
+              asChild
+            >
+              <a
+                href="https://info.quickswap.exchange/analytics/v3/pairs/0x75f6f0af00b548b0be0b35d5c11d3b1f9ace6bf4?chainId=137"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lg font-medium flex items-center"
+              >
+                👉 Acesse o Pool
+                <ArrowRight className="ml-2 h-5 w-5 animate-pulse" />
+              </a>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-secondary text-secondary hover:bg-secondary/10 px-10 py-6 rounded-xl bg-transparent transition-all duration-300 hover:scale-105 text-lg font-medium"
+              onClick={() => {
+                document.getElementById("como-garantir")?.scrollIntoView({
+                  behavior: "smooth",
+                });
+              }}
+            >
+              Saiba Mais
+            </Button>
+          </div>
           <div className="max-w-4xl mx-auto">
             <Card className="border-2 border-primary/20 hover:border-primary/40 hover:shadow-xl hover:shadow-primary/10 transition-all duration-300 rounded-2xl overflow-hidden bg-gradient-to-br from-card to-card/80">
               <CardHeader className="pb-8">
                 <CardDescription className="text-lg leading-relaxed space-y-4">
                   <p>Estamos em fase inicial de implementação.</p>
-                  <p>O token URSAL está disponível na rede Polygon para compra em edição limitada na QuickSwap:</p>
+                  <p>
+                    O token URSAL está disponível na rede Polygon para compra em
+                    edição limitada na QuickSwap:
+                  </p>
                   <div className="bg-muted/70 p-4 rounded-lg border border-border/30">
                     <p className="font-semibold">👉 Acesse o Pool</p>
-                    <p>Clique na opção "Swap" e troque USDT (rede Polygon) por URSAL.</p>
+                    <p>
+                      Clique na opção "Swap" e troque USDT (rede Polygon) por
+                      URSAL.
+                    </p>
                   </div>
                   <ul className="space-y-2 text-left">
-                    <li>• Atualmente, disponível apenas para troca com USDT.</li>
-                    <li>• O Pool garante o melhor preço automático no momento da operação.</li>
-                    <li>• A disponibilidade é limitada e segue a lógica de ordem de chegada.</li>
+                    <li>
+                      • Atualmente, disponível apenas para troca com USDT.
+                    </li>
+                    <li>
+                      • O Pool garante o melhor preço automático no momento da
+                      operação.
+                    </li>
+                    <li>
+                      • A disponibilidade é limitada e segue a lógica de ordem
+                      de chegada.
+                    </li>
                     <li>• Enquanto durarem os estoques.</li>
                   </ul>
                 </CardDescription>
@@ -152,11 +197,17 @@ export default function URSALHomePage() {
               {/* Passo 1 */}
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl text-primary">Passo 1 – Criar sua carteira</CardTitle>
+                  <CardTitle className="text-xl text-primary">
+                    Passo 1 – Criar sua carteira
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     <ul className="space-y-2">
-                      <li>• Baixe e instale a MetaMask (navegador ou celular).</li>
-                      <li>• Configure a rede Polygon (Matic) dentro da MetaMask.</li>
+                      <li>
+                        • Baixe e instale a MetaMask (navegador ou celular).
+                      </li>
+                      <li>
+                        • Configure a rede Polygon (Matic) dentro da MetaMask.
+                      </li>
                     </ul>
                   </CardDescription>
                 </CardHeader>
@@ -165,15 +216,24 @@ export default function URSALHomePage() {
               {/* Passo 2 */}
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl text-secondary">Passo 2 – Comprar USDT na rede Polygon</CardTitle>
+                  <CardTitle className="text-xl text-secondary">
+                    Passo 2 – Comprar USDT na rede Polygon
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     <ul className="space-y-2">
-                      <li>• Crie uma conta em uma corretora confiável (ex.: Binance).</li>
-                      <li>• Compre USDT e faça a retirada diretamente na rede Polygon (MATIC) para sua MetaMask.</li>
+                      <li>
+                        • Crie uma conta em uma corretora confiável (ex.:
+                        Binance).
+                      </li>
+                      <li>
+                        • Compre USDT e faça a retirada diretamente na rede
+                        Polygon (MATIC) para sua MetaMask.
+                      </li>
                     </ul>
                     <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
                       <p className="font-semibold text-yellow-600 dark:text-yellow-400">
-                        ⚠️ Atenção: certifique-se de selecionar rede Polygon (MATIC) na hora de sacar os USDT da Binance.
+                        ⚠️ Atenção: certifique-se de selecionar rede Polygon
+                        (MATIC) na hora de sacar os USDT da Binance.
                       </p>
                     </div>
                   </CardDescription>
@@ -183,7 +243,9 @@ export default function URSALHomePage() {
               {/* Passo 3 */}
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl text-primary">Passo 3 – Conectar à QuickSwap</CardTitle>
+                  <CardTitle className="text-xl text-primary">
+                    Passo 3 – Conectar à QuickSwap
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     <ul className="space-y-2">
                       <li>• Acesse o link do pool oficial.</li>
@@ -196,12 +258,17 @@ export default function URSALHomePage() {
               {/* Passo 4 */}
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl text-secondary">Passo 4 – Realizar a troca</CardTitle>
+                  <CardTitle className="text-xl text-secondary">
+                    Passo 4 – Realizar a troca
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     <ul className="space-y-2">
                       <li>• Selecione USDT → URSAL.</li>
                       <li>• Confirme a transação na MetaMask.</li>
-                      <li>• Pronto! Agora você possui tokens URSAL na sua carteira.</li>
+                      <li>
+                        • Pronto! Agora você possui tokens URSAL na sua
+                        carteira.
+                      </li>
                     </ul>
                   </CardDescription>
                 </CardHeader>
@@ -210,10 +277,15 @@ export default function URSALHomePage() {
               {/* Passo 5 */}
               <Card className="border-border hover:shadow-lg transition-shadow">
                 <CardHeader>
-                  <CardTitle className="text-xl text-primary">Passo 5 – Visualizar seus tokens</CardTitle>
+                  <CardTitle className="text-xl text-primary">
+                    Passo 5 – Visualizar seus tokens
+                  </CardTitle>
                   <CardDescription className="text-lg">
                     <ul className="space-y-2">
-                      <li>• Caso não apareça automaticamente, adicione manualmente o contrato do token URSAL à MetaMask.</li>
+                      <li>
+                        • Caso não apareça automaticamente, adicione manualmente
+                        o contrato do token URSAL à MetaMask.
+                      </li>
                       <li>• O token URSAL estará visível no seu saldo.</li>
                     </ul>
                   </CardDescription>
@@ -240,7 +312,9 @@ export default function URSALHomePage() {
                   <ul className="space-y-4 text-left">
                     <li>• Um token independente e descentralizado.</li>
                     <li>• Protegido da inflação por sua natureza digital.</li>
-                    <li>• Representa uma ideia de integração e apoio comunitário.</li>
+                    <li>
+                      • Representa uma ideia de integração e apoio comunitário.
+                    </li>
                   </ul>
                 </CardDescription>
               </CardHeader>
@@ -265,7 +339,9 @@ export default function URSALHomePage() {
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle className="text-xl">Especificações do Token</CardTitle>
+                  <CardTitle className="text-xl">
+                    Especificações do Token
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex justify-between items-center py-2 border-b border-border">
@@ -293,35 +369,45 @@ export default function URSALHomePage() {
 
               <Card className="border-border">
                 <CardHeader>
-                  <CardTitle className="text-xl">Vantagens da Polygon</CardTitle>
+                  <CardTitle className="text-xl">
+                    Vantagens da Polygon
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-semibold">Baixas Taxas</p>
-                      <p className="text-sm text-muted-foreground">Transações com custo mínimo</p>
+                      <p className="text-sm text-muted-foreground">
+                        Transações com custo mínimo
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-semibold">Alta Velocidade</p>
-                      <p className="text-sm text-muted-foreground">Confirmações em segundos</p>
+                      <p className="text-sm text-muted-foreground">
+                        Confirmações em segundos
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-semibold">Compatibilidade Ethereum</p>
-                      <p className="text-sm text-muted-foreground">Funciona com carteiras e DApps existentes</p>
+                      <p className="text-sm text-muted-foreground">
+                        Funciona com carteiras e DApps existentes
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                     <div>
                       <p className="font-semibold">Sustentabilidade</p>
-                      <p className="text-sm text-muted-foreground">Rede eco-friendly com baixo consumo energético</p>
+                      <p className="text-sm text-muted-foreground">
+                        Rede eco-friendly com baixo consumo energético
+                      </p>
                     </div>
                   </div>
                 </CardContent>
@@ -336,14 +422,20 @@ export default function URSALHomePage() {
         <div className="container mx-auto px-4 text-center">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-balance">
-              Faça Parte da <span className="text-primary">Revolução</span> URSAL
+              Faça Parte da <span className="text-primary">Revolução</span>{" "}
+              URSAL
             </h2>
             <p className="text-lg text-muted-foreground mb-8 text-pretty">
-              Junte-se à comunidade que está construindo o futuro financeiro da América do Sul. Invista em URSAL e seja
-              parte desta transformação histórica.
+              Junte-se à comunidade que está construindo o futuro financeiro da
+              América do Sul. Invista em URSAL e seja parte desta transformação
+              histórica.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3" asChild>
+              <Button
+                size="lg"
+                className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3"
+                asChild
+              >
                 <a
                   href="https://info.quickswap.exchange/analytics/v3/pairs/0x75f6f0af00b548b0be0b35d5c11d3b1f9ace6bf4?chainId=137"
                   target="_blank"
@@ -357,6 +449,11 @@ export default function URSALHomePage() {
                 size="lg"
                 variant="outline"
                 className="border-secondary text-secondary hover:bg-secondary/10 px-8 py-3 bg-transparent"
+                onClick={() => {
+                  document.getElementById("como-garantir")?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
               >
                 Entrar na Comunidade
               </Button>
@@ -378,11 +475,13 @@ export default function URSALHomePage() {
               <CardHeader className="pb-8">
                 <CardDescription className="text-lg leading-relaxed space-y-4">
                   <p className="font-semibold text-red-600 dark:text-red-400">
-                    Este é um projeto de diversão, sem nenhuma promessa de adoção, retorno financeiro ou rentabilidade futura.
+                    Este é um projeto de diversão, sem nenhuma promessa de
+                    adoção, retorno financeiro ou rentabilidade futura.
                   </p>
                   <p>Você está adquirindo um token e levando apenas o token.</p>
                   <p className="font-semibold text-orange-600 dark:text-orange-400">
-                    Existe risco potencial de perda parcial ou integral do valor investido.
+                    Existe risco potencial de perda parcial ou integral do valor
+                    investido.
                   </p>
                 </CardDescription>
               </CardHeader>
@@ -396,9 +495,12 @@ export default function URSALHomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-primary">URSAL</span> – União das Repúblicas Socialistas da América Latina
+              <span className="text-primary">URSAL</span> – União das Repúblicas
+              Socialistas da América Latina
             </h3>
-            <p className="text-muted-foreground mb-6">Token de unificação da América Latina</p>
+            <p className="text-muted-foreground mb-6">
+              Token de unificação da América Latina
+            </p>
             <div className="flex justify-center items-center gap-4 text-sm text-muted-foreground">
               <span>Token: $URSAL</span>
               <span>•</span>
@@ -410,5 +512,5 @@ export default function URSALHomePage() {
         </div>
       </footer>
     </div>
-  )
+  );
 }
